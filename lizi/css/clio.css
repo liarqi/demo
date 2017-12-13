@@ -1,0 +1,153 @@
+a{
+	text-decoration: none;
+}
+.search-selected{
+	margin-bottom: 10px;
+}
+.search-selected a, .search-selected span {
+    display: inline-block;
+}
+.search-selected a:hover{
+	color: #FF666B;
+	text-decoration: underline;
+}
+.search-options {
+    background-color: #fff;
+}
+.search-options .bd {
+    border: 1px solid #F3F3F3;
+    border-bottom: none;
+    +zoom: 1;
+}
+.search-options dl {
+    padding: 5px 0;
+    border-bottom: 1px solid #F3F3F3;
+    width: 100%;
+    position: relative;
+}
+.search-options dt {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    font-size: 14px;
+}
+.search-options dd {
+    position: relative;
+    padding: 0 50px 0 63px;
+    height: 24px;
+    overflow: hidden;
+    
+}
+.search-options dd .items {
+    padding-top: 2px;
+}
+.search-options dd .link {
+    float: left;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.search-options dd .items a {
+    color: #666;
+    padding: 2px 4px;
+}
+.search-options dd .items a:hover{
+	background: #FF666A;
+	color: white;
+}
+.search-options dd a.more-btn,.search-options dd a.more-btn2 {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    margin-right: 0;
+    padding: 0 20px 0 0;
+    color: #666;
+    cursor: pointer;
+}
+.sort {
+    padding: 15px 0;
+}
+.sort .sort_bd a.current, .sort .sort_bd a:hover {
+    color: #ff666b;
+    border-bottom-color: #ff666b;
+    text-decoration: none;
+}
+.sort .sort_bd a {
+    margin: 0 15px;
+    padding: 0 3px;
+    color: #333;
+    border-bottom: solid 2px transparent;
+}
+/*clio商品列表*/
+.productlist {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.productlist ul {
+    margin-right: -20px;
+}
+.productlist li {
+    width: 196px;
+    height: 273px;
+    float: left;
+    position: relative;
+    border: 1px solid #eee;
+    margin: 0 21px 20px 0;
+    padding: 12px;
+    box-shadow: 0 0 1px 0 #eee;
+    background: #fff;
+    font-size: 14px;
+}
+.productlist li:hover{
+	border: 1px solid #ff666b;
+}
+.productlist li a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+.productlist li a img {
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+   
+}
+.productlist li p {
+    padding: 3px 0;
+}
+.productlist li p.txt {
+    height: 40px;
+    line-height: 20px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+em{
+	font-style: normal;
+}
+.productlist li p.txt em {
+    color: red;
+}
+.productlist li p.xszk {
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 162px; 
+    padding: 0px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.productlist li p span.fr {
+    font-size: 12px;
+    color: #999;
+}
+.orange, a.orange, a.orange:hover {
+    color: #ff666b;
+}

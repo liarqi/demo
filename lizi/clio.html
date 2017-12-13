@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 声明文档使用的字符编码 -->
+
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- 页面描述 -->
+		<meta name="description" content="不超过150个字符" />
+		<!-- 页面关键词 -->
+		<meta name="keywords" content="" />
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+		<!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏
+如果content设置为yes，Web应用会以全屏模式运行，反之，则不会 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<meta name="format-detection" content="telphone=no, email=no" />
+
+		<title>CLIO</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/clio.css" />
+	</head>
+
+	<body>
+		<!--顶部导航开始-->
+		<div class="top_bar">
+			<div class="top_bar_con">
+				<ul class="bar_right">
+					<li>
+						<a href="#">登录</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li class="normal">
+						<a href="#" class="our">关注我们</a>
+
+						<svg class="icon xjt" aria-hidden="true">
+							<use xlink:href="#icon-xialajiantouxiao"></use>
+						</svg>
+						<div class="more_bd">
+							<div class="list">
+								<a href="#">
+									<span class="guanzhu">
+										
+									</span>
+									<span class="jgz">
+										加关注
+									</span>
+								</a>
+								<hr />
+								<h5>扫描二维码</h5>
+								<p>关注丽子美妆微信</p>
+								<img src="img/ftewm.png" />
+							</div>
+
+						</div>
+					</li>
+					<li class="normal">
+						<a href="#">帮助中心</a>
+					</li>
+					<li class="normal sc">
+						<i class="iconfont icon-xihuan heart"></i>
+						<a href="#">收藏丽子</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部导航结束-->
+		<!--头部开始-->
+		<div class="header">
+			<div class="header_main">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo.png" /></a>
+				</div>
+				<div class="search_box">
+					<form action="##" method="post">
+						<input type="text" name="input" id="input" placeholder="请输入商品或品牌" />
+						<button type="submit" id="sousuo" value="">	</button>
+					</form>
+				</div>
+				<div class="hot">
+					<span>热搜榜：</span>
+					<a href="#" class="red">悦诗风吟</a>
+					<a href="#">面霜</a>
+					<a href="#" class="red">芝兰</a>
+					<a href="#">面膜</a>
+					<a href="#" class="red">化妆品</a>
+					<a href="#">唇膏/口红</a>
+					<a href="#" class="red">BB霜</a>
+
+				</div>
+				<div class="header_car">
+					<a class="gwc">
+						<i class="iconfont icon-gouwuche"></i> 购物车
+					</a>
+
+				</div>
+			</div>
+
+		</div>
+		<!--头部结束-->
+		<!--内容区开始-->
+		<div id="wrapper">
+			<div class="search-selected">
+				<span class="search-min-nav">
+				<a href="index.html">首页</a>
+				&gt;
+				<a href="#">全部</a>
+				&gt;
+				<a href="clio.html">clio</a>
+				</span>
+			</div>
+			<div class="search-options" id="search-options">
+				<div class="bd">
+					<dl>
+						<dt>分类：</dt>
+						<dd>
+							<div class="items clearfloat">
+								<div class="link">
+									<a href="#">粉饼(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">妆前乳(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">彩妆套装(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">遮瑕(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">眼影(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">粉底液/膏(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">BB霜/CC霜(3)</a>
+								</div>
+								<div class="link">
+									<a href="#">睫毛膏(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">乳液/面霜(5)</a>
+								</div>
+								<div class="link">
+									<a href="#">眼线(4)</a>
+								</div>
+								<div class="link">
+									<a href="#">口红(2)</a>
+								</div>
+								<div class="link">
+									<a href="#">唇彩/唇蜜/唇釉(12)</a>
+								</div>
+								<div class="link">
+									<a href="#">染眉膏(2)</a>
+								</div>
+							</div>
+							<a class="more-btn">更多&nbsp;
+								<svg class="icon xjt" aria-hidden="true">
+									<use xlink:href="#icon-xialajiantouxiao"></use>
+								</svg>
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>功效：</dt>
+						<dd>
+							<div class="items clearfloat">
+								<div class="link">
+									<a href="#">补水保湿(4)</a>
+								</div>
+								<div class="link">
+									<a href="#">舒缓肌肤(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">淡化干纹(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">遮瑕(4)</a>
+								</div>
+								<div class="link">
+									<a href="#">提亮肤色(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">定妆(2)</a>
+								</div>
+								<div class="link">
+									<a href="#">上色持久(13)</a>
+								</div>
+								<div class="link">
+									<a href="#">卷翘纤长(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">提拉紧致(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">防水彩妆(9)</a>
+								</div>
+								<div class="link">
+									<a href="#">皙白(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">滋润娇唇(3)</a>
+								</div>
+								<div class="link">
+									<a href="#">柔软顺滑(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">滋润(6)</a>
+								</div>
+								<div class="link">
+									<a href="#">均匀肤色(7)</a>
+								</div>
+								<div class="link">
+									<a href="#">控油(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">其他(6)</a>
+								</div>
+								<div class="link">
+									<a href="#">防晒(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">祛痘印(1)</a>
+								</div>
+								<div class="link">
+									<a href="#">其他功效(2)</a>
+								</div>
+								<div class="link">
+									<a href="#">塑造轮廓(3)</a>
+								</div>
+								<div class="link">
+									<a href="#">补充营养(1)</a>
+								</div>
+							</div>
+							<a class="more-btn2">更多&nbsp;
+								<svg class="icon xjt" aria-hidden="true">
+									<use xlink:href="#icon-xialajiantouxiao"></use>
+								</svg>
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>品牌：</dt>
+						<dd>
+							<div class="items cle">
+								<div class="link">
+									<a href="#">珂莱欧/CLIO(35)</a>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>价格：</dt>
+						<dd class="dd-price">
+							<div class="items cle">
+								<div class="link">
+									<a href="#">99元以内(20)</a>
+								</div>
+								<div class="link">
+									<a href="#">100-199元(14)</a>
+								</div>
+								<div class="link">
+									<a href="#">200-299元(1)</a>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort_bd">
+					<a title="销量（销量从低到高 ）" href="#" class="current">
+						<span>销量</span>
+					</a>|
+					<a title="人气（人气排序）" href="#">
+						<span>人气</span>
+					</a>|
+					<a title="价格（价格从高到低）" href="#">
+						<span>价格</span>
+					</a>|
+					<a title="上新（最新发布排序）" href="#">
+						<span>上新</span>
+					</a>
+				</div>
+			</div>
+			<div class="productlist" id="productlist">
+				<ul class="clearfloat">
+					<li>
+						<a href="#">
+							<img src="img/productlist1.jpg" alt="韩国Clio珂莱欧KILL COVER遮瑕气垫BB粉饼套装 轻薄服帖持久遮瑕" />
+							<p class="txt">韩国<em>Clio</em>珂莱欧KILL COVER遮瑕气垫BB粉饼套装 轻薄服帖持久遮瑕</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥160.00</span>
+							<span class="fr">已售937件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist2.jpg" alt="韩国clio/珂莱欧蜗牛亮肤霜懒人补水排毒滋润素颜霜50ml 补水美白">
+							<p class="txt">韩国<em>clio</em>/珂莱欧蜗牛亮肤霜懒人补水排毒滋润素颜霜50ml 补水美白</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥148.00</span>
+							<span class="fr">已售616件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist3.jpg" alt="韩国CLIO珂莱欧少女之吻唇雾感唇膏3.5g  保湿持久不掉色">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧少女之吻唇雾感唇膏3.5g 保湿持久不掉色</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥90.00</span>
+							<span class="fr">已售199件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist4.jpg" alt="韩国Clio珂莱欧PERIPERA菲丽菲拉滴管染色唇彩8ml 持久莹润" style="display: block;">
+							<p class="txt">韩国<em>Clio</em>珂莱欧PERIPERA菲丽菲拉滴管染色唇彩8ml 持久莹润</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥61.00</span>
+							<span class="fr">已售141件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist5.jpg" alt="韩国Clio/珂莱欧 气垫BB霜限量版套装 SPF50送粉底液" style="display: block;">
+							<p class="txt">韩国<em>Clio</em>/珂莱欧 气垫BB霜限量版套装 SPF50送粉底液</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥185.00</span>
+							<span class="fr">已售125件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist6.jpg" alt="韩国代购clio珂莱欧气垫BB霜套盒 遮瑕粉底霜粉底液粉饼 送替换装">
+							<p class="txt">韩国代购<em>clio</em>珂莱欧气垫BB霜套盒 遮瑕粉底霜粉底液粉饼 送替换装</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥165.00</span>
+							<span class="fr">已售110件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist7.jpg" alt="韩国珂莱欧clio防水双头纹身水性眉笔染眉膏">
+							<p class="txt">韩国珂莱欧<em>clio</em>防水双头纹身水性眉笔染眉膏</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥79.00</span>
+							<span class="fr">已售63件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist8.jpg" alt="韩国代购正品CLIO珂莱欧goodal素颜霜 蜗牛亮肤面霜 滕雨佳推荐">
+							<p class="txt">韩国代购正品<em>CLIO</em>珂莱欧goodal素颜霜 蜗牛亮肤面霜 滕雨佳推荐</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥188.00</span>
+							<span class="fr">已售62件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist9.jpg" alt="韩国代购CLIO珂莱欧少女之吻口红唇膏 韩剧制作人IU同款">
+							<p class="txt">韩国代购<em>CLIO</em>珂莱欧少女之吻口红唇膏 韩剧制作人IU同款</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥55.20</span>
+							<span class="fr">已售57件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist10.jpg" alt="韩国代购CLIO珂莱欧气垫BB霜 粉底液补充装限量套装">
+							<p class="txt">韩国代购<em>CLIO</em>珂莱欧气垫BB霜 粉底液补充装限量套装</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥158.00</span>
+							<span class="fr">已售51件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist11.jpg" alt="香港直邮韩国Clio珂莱欧果达儿素颜霜50ml保湿面霜">
+							<p class="txt">香港直邮韩国<em>Clio</em>珂莱欧果达儿素颜霜50ml保湿面霜</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥149.00</span>
+							<span class="fr">已售51件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist12.jpg" alt="韩国Clio珂莱欧珠光凝胶防水眼线胶笔 不晕染不脱妆">
+							<p class="txt">韩国<em>Clio</em>珂莱欧珠光凝胶防水眼线胶笔 不晕染不脱妆</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥64.00</span>
+							<span class="fr">已售43件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist13.jpg">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧微热之吻莹彩炫亮唇釉4.7g17年10月到期</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥90.00</span>
+							<span class="fr">已售26件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist14.jpg" alt="韩国Clio珂莱欧双头水性眉笔液体眉笔染眉膏4.5g 防水防汗持久">
+							<p class="txt">韩国<em>Clio</em>珂莱欧双头水性眉笔液体眉笔染眉膏4.5g 防水防汗持久</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥113.00</span>
+							<span class="fr">已售25件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist15.jpg" alt="韩国clio珂莱欧唇彩peripera菲丽菲拉染唇液口红持久">
+							<p class="txt">韩国<em>clio</em>珂莱欧唇彩peripera菲丽菲拉染唇液口红持久</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥58.00</span>
+							<span class="fr">已售23件</span>
+						</p>
+					</li>
+					<li>
+						<a href="chenghua.html">
+							<img src="img/productlist16.jpg" alt="PERIPERA菲丽菲拉滴管唇彩 染色ink墨水唇液 不脱色咬唇">
+							<p class="txt">韩国<em>Clio</em> PERIPERA菲丽菲拉滴管唇彩 染色ink墨水唇液 不脱色咬唇</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥59.90</span>
+							<span class="fr">已售23件</span>
+						</p>
+					</li>
+
+					<li>
+						<a href="#">
+							<img src="img/productlist17.jpg" alt="韩国代购 CLIO 珂莱欧 防水不晕染眼线笔 凝胶笔 眼影笔 推荐" style="display: block;">
+							<p class="txt">韩国代购 <em>CLIO</em> 珂莱欧 防水不晕染眼线笔 凝胶笔 眼影笔 推荐</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥65.00</span>
+							<span class="fr">已售17件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist18.jpg" alt="韩国Clio珂莱欧PERIPERA菲丽菲拉气垫唇彩8ml 亚光雾面">
+							<p class="txt">韩国<em>Clio</em>珂莱欧PERIPERA菲丽菲拉气垫唇彩8ml 亚光雾面</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="cle">
+							<span class="orange fl">¥64.00</span>
+							<span class="fr">已售17件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist19.jpg" alt="韩国Clio珂莱欧夏日新款长效防水气垫BB霜送替换装 控油遮瑕">
+							<p class="txt">韩国<em>Clio</em>珂莱欧夏日新款长效防水气垫BB霜送替换装 控油遮瑕</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥151.00</span>
+							<span class="fr">已售14件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist20.jpg" alt="韩国CLIO珂莱欧专业单色眼影孔孝真同款pony推荐眼影 1.5g">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧专业单色眼影孔孝真同款pony推荐眼影 1.5g</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥56.00</span>
+							<span class="fr">已售12件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist21.jpg" alt="韩国代购CLIO旗下peripera 气垫染色唇彩唇膏 哑光雾面">
+							<p class="txt">韩国代购<em>CLIO</em>旗下peripera 气垫染色唇彩唇膏 哑光雾面</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥37.50</span>
+							<span class="fr">已售7件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist22.jpg" alt="韩国CLIO珂莱欧菲力菲拉滴管唇彩2017鸡年卡通限量款8ml">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧菲力菲拉滴管唇彩2017鸡年卡通限量款8ml</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥53.00</span>
+							<span class="fr">已售6件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist23.jpg" alt="韩国CLIO珂莱欧果达儿goodal锁水保湿面霜50ml">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧果达儿goodal锁水保湿面霜50ml</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥135.00</span>
+							<span class="fr">已售5件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist24.jpg" alt="CLIO防水眼线液笔">
+							<p class="txt"><em>CLIO</em> 防水眼线液笔</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥102.20</span>
+							<span class="fr">已售0件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist25.jpg" alt="Clio 防水不粘杯30秒快干唇彩 6# LOVE HATE2017年12月到期" style="display: block;">
+							<p class="txt"><em>Clio</em> 防水不粘杯30秒快干唇彩 6# LOVE HATE2017年12月到期</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥70.81</span>
+							<span class="fr">已售0件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist26.jpg" alt="韩国CLIO珂莱欧kill cover遮瑕液套盒 送提亮笔和遮瑕笔 pony推荐">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧kill cover遮瑕液套盒 送提亮笔和遮瑕笔 pony推荐</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥85.00</span>
+							<span class="fr">已售88件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist27.jpg" alt="韩国彩妆代购clio珂莱欧眼线棒眼线液笔眼线笔防水不晕染">
+							<p class="txt">韩国彩妆代购<em>clio</em>珂莱欧眼线棒眼线液笔眼线笔防水不晕染</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥89.00</span>
+							<span class="fr">已售13件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist28.jpg" alt="韩国CLIO珂莱欧 防水雾面染色唇彩 不脱色不粘杯">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧 防水雾面染色唇彩 不脱色不粘杯</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥75.00</span>
+							<span class="fr">已售7件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist29.jpg" alt="韩国代购CLIO双头纹身液体眉笔+水性染眉膏 防水持久 制作人同款">
+							<p class="txt">韩国代购<em>CLIO</em>双头纹身液体眉笔+水性染眉膏 防水持久 制作人同款</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥118.00</span>
+							<span class="fr">已售4件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist30.jpg" alt="韩国CLIO珂莱欧KILL COVER无暇水润完美遮瑕粉底液">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧KILL COVER无暇水润完美遮瑕粉底液</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥138.00</span>
+							<span class="fr">已售4件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist31.jpg" alt="Clio珂莱欧沙龙睫毛膏8ml">
+							<p class="txt"><em>Clio</em>珂莱欧沙龙睫毛膏8ml</p>
+
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥99.00</span>
+							<span class="fr">已售2件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist32.jpg" alt="韩国CLIO珂莱欧墨水染色唇彩10ml唇部卸妆乳8g套装">
+							<p class="txt">韩国<em>CLIO</em>珂莱欧墨水染色唇彩10ml唇部卸妆乳8g套装</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥100.00</span>
+							<span class="fr">已售2件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist33.jpg" alt="Clio防水不粘杯30秒快干唇彩">
+							<p class="txt"><em>Clio</em> 防水不粘杯30秒快干唇彩</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥58.00</span>
+							<span class="fr">已售0件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist34.jpg" alt="韩国代购CLIO黄金蜗牛高浓度修复霜 保湿弹力面霜 50ML 含金箔 ">
+							<p class="txt">韩国代购<em>CLIO</em>黄金蜗牛高浓度修复霜 保湿弹力面霜 50ML 含金箔 </p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥218.00</span>
+							<span class="fr">已售0件</span>
+						</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/productlist35.jpg" alt="韩国Clio珂莱欧菲丽菲拉圣诞节限量滴管染色ink唇液墨水唇彩8g">
+							<p class="txt">韩国<em>Clio</em>珂莱欧菲丽菲拉圣诞节限量滴管染色ink唇液墨水唇彩8g</p>
+							<p class="xszk"></p>
+						</a>
+						<p class="clearfloat">
+							<span class="orange fl">¥56.00</span>
+							<span class="fr">已售0件</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!--内容区结束-->
+
+		<!--底部脚注-->
+		<div id="footer">
+			<div class="ft_main">
+				<div class="ft_nav">
+					<a href="#" class="noborder">关于丽子</a> /
+					<a href="#">商家入驻</a> /
+					<a href="#">加入我们</a> /
+					<a href="#">配送政策</a> /
+					<a href="#">售后保障</a> /
+					<a href="#">帮助中心</a> /
+					<a href="#">联系我们</a> /
+					<a href="#">平台公告</a> /
+					<a href="#">友情链接</a>
+				</div>
+				<div class="ft_txt">
+					<p>
+						Copyright © 2009-2016, 杭州徐娜拉电子商务有限公司 LIZI.COM 增值电信业务经营许可证：浙B2-20110315 备案号：
+						<a href="#" target="_blank">浙ICP备11012845号-5</a>
+					</p>
+					<p class="ft_contact">
+						<span>服务时间：09:00-23:00</span>
+						<span class="ft_phone">客服热线: <em>400-106-6160</em></span>
+						<span><a target="_blank" href="#"><img src="img/ghs.png" width="16" height="16">浙公网安备33010402001635号</a></span>
+					</p>
+					<p class="flink">
+						<a href="http://www.mizhe.com/" target="_blank">米折网</a>
+						<a href="http://club.yhd.com/" target="_blank">一号店</a>
+						<a href="http://www.gome.com.cn/" target="_blank">国美在线</a>
+						<a href="http://www.handu.com/" target="_blank">韩都衣舍</a>
+						<a href="http://www.17ugo.com/" target="_blank">优购物</a>
+						<a href="http://www.secoo.com/" target="_blank">寺库网</a>
+						<a href="http://www.ehaier.com/" target="_blank">海尔商城</a>
+						<a href="http://www.manmanbuy.com/" target="_blank">比价网</a>
+						<a href="http://www.wadongxi.com/" target="_blank">挖东西</a>
+						<a href="http://www.juanpi.com/" target="_blank">卷皮网</a>
+						<a href="http://www.vsigo.cn/" target="_blank">视客眼镜网</a>
+						<a href="http://www.shangpin.com/" target="_blank">尚品网</a>
+						<a href="http://www.feiniu.com/" target="_blank">飞牛网</a>
+						<a href="http://www.yuemei.com/" target="_blank">悦美整形网</a>
+					</p>
+					<p class="beian_ico">
+						<a href="#" target="_blank"><img alt="丽子美妆获得电商金典奖" src="img/flogo1.png"></a>
+						<a href="#" target="_blank"><img alt="中国人保为丽子化妆品承保" src="img/flogo2.png"></a>
+						<a href="#" target="_blank"><img alt="互联网协会A级信用认证" src="img/flogo3.png"></a>
+
+					</p>
+				</div>
+				<div class="fsm fsm2">
+					<img src="img/ftewm.png">
+					<p>
+						公众号<br> 扫描关注微信公众号
+					</p>
+				</div>
+				<div class="fsm fsm">
+					<a href="#" target="_blank"><img src="img/ftapp.jpg">
+						<p>
+							APP<br> 手机客户端下载
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--脚注结束-->
+		<!--右侧边栏开始-->
+		<div id="right_side">
+			<ul class="rs_shop">
+				<li class="rs_car">
+					<a href="#">
+						<i class="iconfont">&#xe899;</i>
+						<span>购物车</span>
+						<em id="sidebar_cartnum">0</em>
+					</a>
+				</li>
+			</ul>
+			<ul class="rs_btn">
+				<li>
+					<a href="#">
+						<i class="iconfont">&#xe7bc;</i>
+					</a>
+					<div class="tip">
+						<span class="iconfont"></span>
+						<a href="#">我的优惠券</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<i class="iconfont">&#xe8a0;</i>
+					</a>
+					<div class="tip">
+						<span class="iconfont"></span>
+						<a href="#">我的丽子</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<i class="iconfont">&#xf0050;</i>
+					</a>
+					<div class="tip ewm">
+						<span class="iconfont sys"></span>
+						<a href="#">扫一扫，下载丽子APP
+							<img src="img/ewm.png" /></a>
+					</div>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="iconfont">&#xe617;</i>
+					</a>
+					<div class="tip">
+						<span class="iconfont"></span>
+						<a href="index.html">返回首页</a>
+					</div>
+				</li>
+				<li class="go">
+					<a href="#">
+						<i class="iconfont">&#xe892;</i>
+					</a>
+					<div class="tip" id="go">
+						<span class="iconfont"></span>
+						<a href="#">返回顶部</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--右侧边栏结束-->
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/swiper.jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/index.js">
+		</script>
+
+		<script type="text/javascript" src="js/iconfont1.js">
+		</script>
+		<script type="text/javascript" src="js/iconfont.js">
+		</script>
+		<script type="text/javascript" src="js/clio.js">
+		</script>
+	</body>
+
+</html>
