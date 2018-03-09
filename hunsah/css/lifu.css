@@ -1,0 +1,85 @@
+*{padding: 0px;
+  margin: 0px;
+}
+html,body{
+	min-width: 300px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    padding-top: 60px;
+    
+}
+#lifu_main .lifu_img{
+	padding: 0px;
+	/*border: 1px solid red;*/
+	height: 550px;
+	text-align: center;
+	margin-bottom: 5px;
+	
+	position: relative;
+}
+#lifu_main .img1{
+	background: url(../img/thumb.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img2{
+	background: url(../img/thumb2.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img3{
+	background: url(../img/thumb3.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img4{
+	background: url(../img/thumb4.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img5{
+	background: url(../img/thumb5.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img6{
+	background: url(../img/thumb6.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img7{
+	background: url(../img/thumb7.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img8{
+	background: url(../img/thumb8.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .img9{
+	background: url(../img/thumb9.jpg) no-repeat top center;
+	background-size:cover;
+}
+#lifu_main .lifu_img a{
+	position: absolute;
+	height: 100%;
+	width: 100%;	
+	background:rgba(255,255,255,0.7) ;
+	z-index: 20;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+#lifu_main .btn-default
+{
+	margin-top: 50%;
+	color: white;
+	background: #000;
+	border: none;	
+}
+#lifu_main .btn-default:hover
+{
+	margin-top: 50%;
+	color: white;
+	background: #666;
+	border: none;
+}
+

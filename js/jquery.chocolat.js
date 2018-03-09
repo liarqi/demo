@@ -84,68 +84,68 @@
 			showChocolat();
 			return false;
 		}
-		function _interface(){
-			//html
-			clear();
-			settings.container.append('<div id="Choco_overlay"></div><div id="Choco_content"><div id="Choco_close"></div><div id="Choco_loading"></div><div id="Choco_container_photo"><img id="Choco_bigImage" src="" /></div><div id="Choco_container_description"><span id="Choco_container_title"></span><span id="Choco_container_via"></span></div><div id="Choco_left_arrow" class="Choco_arrows"></div><div id="Choco_right_arrow" class="Choco_arrows"></div></div>');	
-			$('#Choco_left_arrow').css('background-image', 'url('+settings.leftImg+')');  
-			$('#Choco_right_arrow').css('background-image', 'url('+settings.rightImg+')');  
-			$('#Choco_close').css('background-image', 'url('+settings.closeImg+')'); 
-			$('#Choco_loading').css('background-image', 'url('+settings.loadingImg+')'); 
-			if(settings.container.get(0).nodeName.toLowerCase() !== 'body'){
-				settings.container.css({'position':'relative','overflow':'hidden','line-height':'normal'});//yes, yes
-				$('#Choco_content').css('position','relative');
-				$('#Choco_overlay').css('position', 'absolute');
-			}
-			//events
-			$(document).unbind('keydown').bind('keydown', function(e){
-				switch(e.keyCode){
-					case 37:
-						changePageChocolat(-1);
-						break;
-					case 39:
-						changePageChocolat(1);
-						break;
-					case 27:
-						close();
-						break;
-				};
-			});
-			if(settings.vache){
-				$('#Choco_overlay').click(function(){
-					close();
-					return false;
-				});
-			}
-			$('#Choco_left_arrow').unbind().bind('click', function(){
-				changePageChocolat(-1);
-				return false;
-			});
-			$('#Choco_right_arrow').unbind().bind('click', function(){
-				changePageChocolat(1);
-				return false;
-			});
-			$('#Choco_close').unbind().bind('click', function(){
-				close();
-				return false;
-			});
-			$(window).resize(function() {
-				load(settings.currentImage,true);
-			});
-	
-		}
-		function showChocolat(){	
-			_interface();
-			load(settings.currentImage, false);
-			$('#Choco_overlay')
-				.css({
-					'background-color' : settings.overlayColor,
-					'opacity'          : settings.overlayOpacity
-				})
-				.fadeIn(settings.fadeInOverlayduration);
-			$('#Choco_content').fadeIn(settings.fadeInImageduration,function(){});
-			
-		}
+		// function _interface(){
+		// 	//html
+		// 	clear();
+		// 	// settings.container.append('<div id="Choco_overlay"></div><div id="Choco_content"><div id="Choco_close"></div><div id="Choco_loading"></div><div id="Choco_container_photo"><img id="Choco_bigImage" src="" /></div><div id="Choco_container_description"><span id="Choco_container_title"></span><span id="Choco_container_via"></span></div><div id="Choco_left_arrow" class="Choco_arrows"></div><div id="Choco_right_arrow" class="Choco_arrows"></div></div>');
+		// 	$('#Choco_left_arrow').css('background-image', 'url('+settings.leftImg+')');
+		// 	$('#Choco_right_arrow').css('background-image', 'url('+settings.rightImg+')');
+		// 	$('#Choco_close').css('background-image', 'url('+settings.closeImg+')');
+		// 	$('#Choco_loading').css('background-image', 'url('+settings.loadingImg+')');
+		// 	if(settings.container.get(0).nodeName.toLowerCase() !== 'body'){
+		// 		settings.container.css({'position':'relative','overflow':'hidden','line-height':'normal'});//yes, yes
+		// 		$('#Choco_content').css('position','relative');
+		// 		// $('#Choco_overlay').css('position', 'absolute');
+		// 	}
+		// 	//events
+		// 	$(document).unbind('keydown').bind('keydown', function(e){
+		// 		switch(e.keyCode){
+		// 			case 37:
+		// 				changePageChocolat(-1);
+		// 				break;
+		// 			case 39:
+		// 				changePageChocolat(1);
+		// 				break;
+		// 			case 27:
+		// 				close();
+		// 				break;
+		// 		};
+		// 	});
+		// 	// if(settings.vache){
+		// 	// 	$('#Choco_overlay').click(function(){
+		// 	// 		close();
+		// 	// 		return false;
+		// 	// 	});
+		// 	// }
+		// 	$('#Choco_left_arrow').unbind().bind('click', function(){
+		// 		changePageChocolat(-1);
+		// 		return false;
+		// 	});
+		// 	$('#Choco_right_arrow').unbind().bind('click', function(){
+		// 		changePageChocolat(1);
+		// 		return false;
+		// 	});
+		// 	$('#Choco_close').unbind().bind('click', function(){
+		// 		close();
+		// 		return false;
+		// 	});
+		// 	$(window).resize(function() {
+		// 		load(settings.currentImage,true);
+		// 	});
+        //
+		// }
+		// function showChocolat(){
+		// 	_interface();
+		// 	load(settings.currentImage, false);
+		// 	$('#Choco_overlay')
+		// 		.css({
+		// 			'background-color' : settings.overlayColor,
+		// 			'opacity'          : settings.overlayOpacity
+		// 		})
+		// 		.fadeIn(settings.fadeInOverlayduration);
+		// 	$('#Choco_content').fadeIn(settings.fadeInImageduration,function(){});
+		//
+		// }
 		function load(image,resize){
 			settings.currentImage = image;
 			$('#Choco_loading').fadeIn(settings.fadeInImageduration);
@@ -280,15 +280,15 @@
 			};
 
 		}
-		function clear(){
-			$('#Choco_overlay').remove();
-			$('#Choco_content').remove();
-		}
-		function close(){
-			$('#Choco_overlay').fadeOut(900, function(){$('#Choco_overlay').remove()});
-			$('#Choco_content').fadeOut(500, function(){$('#Choco_content').remove()});
-			settings.currentImage = 0;
-		}
+		// function clear(){
+		// 	$('#Choco_overlay').remove();
+		// 	$('#Choco_content').remove();
+		// }
+		// function close(){
+		// 	$('#Choco_overlay').fadeOut(900, function(){$('#Choco_overlay').remove()});
+		// 	$('#Choco_content').fadeOut(500, function(){$('#Choco_content').remove()});
+		// 	settings.currentImage = 0;
+		// }
 	
 };
 })(jQuery);

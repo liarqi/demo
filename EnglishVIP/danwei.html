@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=0.8,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		
+		
+		<!--
+			px   em   rem
+			em rem 不兼容ie6-ie8
+			
+			
+			1em=16px
+			1rem=16px
+			
+			
+			em rem ---手机端
+			
+			em的大小是相对的  相对于父亲  
+			父亲是  1.2em
+			孩子是  1.2em
+			em = 父亲的大小乘以自己的大小
+			基类是body
+			
+			
+			rem--结合优点    
+			不会去计算父亲   
+			1rem=16px 
+			基类是html
+
+
+font-size:62.5%    1em=16px * 62.5% =10px
+
+12px ---1.2em   16px  ---1.6em
+
+
+		-->
+		<div style="font-size: 1.2rem;">
+			我是父亲
+			<span style="font-size:1.2rem">
+				我是父亲
+			</span>
+			
+			
+		</div>
+		
+		
+	
+	
+			<hr />
+		
+		
+		<hr />
+		你好啊
+		
+		<p style="font-size:1em;">你好啊1em</p>
+		<p style="font-size:16px;">你好啊16px</p>
+		<p style="font-size:14px;">你好啊14px</p>
+		<p style="font-size:12px;">你好啊12px</p>
+		
+		
+	</body>
+</html>

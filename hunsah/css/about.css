@@ -1,0 +1,31 @@
+*{padding: 0px;
+  margin: 0px;
+}
+html,body{
+	min-width: 300px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    padding-top: 60px;
+    
+}
+#about_main .about_img{
+	border:1px solid #eee;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+#about_main img{
+	width: 100%;
+}
+#about_text{
+	margin: 30px auto;
+}
+#about_text p{
+	text-align: center;
+line-height: normal;
+padding-bottom: 10px;
+}

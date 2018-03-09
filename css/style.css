@@ -422,6 +422,10 @@ a.mask {
   text-decoration: none;
   overflow: hidden;
   display: block;
+    position: relative;
+}
+a.mask:hover .project{
+    display: block;
 }
 img.zoom-img:hover {
   -webkit-transform: scale(1.15);
@@ -1170,4 +1174,16 @@ ul.friend {
 .top-navg ul.res li a {
   font-size: 12px;
 }
+}
+.project{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    text-align: center;
+    color: #1c1c1c;
+    padding-top: 30%;
+    display: none;
 }

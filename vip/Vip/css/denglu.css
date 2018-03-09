@@ -1,0 +1,176 @@
+* {
+	margin: 0px auto;
+	padding: 0px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	list-style: none;
+}
+body{
+	background: #FDFBFE;
+}
+
+.main{
+	width: 1000px;
+	height: 600px;
+	background: url(../img/dl/bg.jpg) no-repeat;
+}
+.head_logo {
+	width: 1000px;
+	height: 100px;
+	margin: 20px auto;
+	/*background: yellow;*/
+	position: relative;
+	z-index: 1;
+	/*overflow: hidden;*/
+}
+
+.logo_img {
+	overflow: hidden;
+	position: absolute;
+	left: -30px;
+}
+.header-vip {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+}
+
+.header-vip img {
+	width: 126px;
+	height: 100px;
+}
+
+.denglu{
+	float: right;
+  width: 274px;
+height: 400px;
+padding-top: 40px;
+padding-right: 100px;
+}
+.top-tip{
+	font-size: 14px;
+line-height: 16px;
+margin-bottom: 15px;
+
+}
+.login_box{
+	width: 100%;
+	height: auto;
+	
+}
+.login_ts{
+	height: 25px;
+line-height: 25px;
+margin-top: -25px;
+color: #f20266;
+}
+.login_input{
+	color: #333;
+	width: 274px;
+	height: 36px;
+	line-height: 36px;
+	position: relative;
+margin-bottom: 25px;
+}
+.login_button{
+	cursor: pointer;
+	color: #fff;
+	background-color: #f10180;
+border: 1px solid #f10180;
+width: 140px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+border-radius: 3px;
+margin-bottom: 25px;
+}
+.other-function{
+	margin-bottom: 50px;
+}
+.f-left{
+	float: left;
+}
+.cannot-login a{
+	color: #333;
+	text-decoration: none;
+}
+.cannot-login{
+	float: right;
+color: #b3b3b3;
+}
+.cannot-login .reg{
+	color: #f10180;
+}
+.title{
+	margin-bottom: 8px;
+}
+.clearfix a{
+	float: left;
+	margin-right: 8px;
+	height: 24px;
+	width: 24px;
+	line-height:24px ;
+	text-decoration: none;
+	color: #666;
+	
+}
+.forget:hover,.u-third-more:hover,.third_wrap a:hover{
+	color: #F10180;
+}
+.u-third-sina{
+	background: url(../img/dl/sprite.jpg) no-repeat -291px -57px;	  
+}
+.u-third-sina:hover{
+	background: url(../img/dl/sprite.jpg) no-repeat -263px -57px;	  
+}
+.u-third-qq{
+	background: url(../img/dl/sprite.jpg) no-repeat -235px -57px;
+}
+.u-third-qq:hover{
+	background: url(../img/dl/sprite.jpg) no-repeat -347px -57px;
+}
+.u-third-alipay{
+	background: url(../img/dl/sprite.jpg) no-repeat -179px -57px;
+}
+.u-third-alipay:hover{
+	background: url(../img/dl/sprite.jpg) no-repeat -151px -57px;
+}
+.u-third-wechat{
+	background: url(../img/dl/sprite.jpg) no-repeat -207px -57px;
+}
+.u-third-wechat:hover{
+	background: url(../img/dl/sprite.jpg) no-repeat -319px -57px;
+}
+.life_imgs{
+	width: 570px;
+	height: 273px;
+}
+#J_more_third_control{
+	position: relative;
+	cursor: pointer;
+	
+	
+}
+.third_wrap{
+	width: 274px;
+	cursor: pointer;	
+	display: none;	
+	position: absolute;
+	
+	bottom: 20px;
+	
+	
+}
+
+
+.third_wrap a{
+	
+	margin-top: 20px;
+	height: 28px;	
+	line-height:28px ;
+	text-decoration: none;
+	color: #666;
+	padding-right: 10px;
+	padding-left: 10px;
+	
+}

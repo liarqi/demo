@@ -1,0 +1,98 @@
+*{padding: 0px;
+  margin: 0px;
+}
+html,body{
+	min-width: 300px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    padding-top: 60px;
+    
+}
+ul{
+	list-style: none;
+}
+#our{
+	background: #EBC3C5;
+	text-align: center;
+	color: white;
+	height: 120px;
+
+}
+#our h2{
+	height: 200px;
+	margin: 43.5px 0;
+}
+#our_main .main_left{
+	
+	background-color: #FAFAFA;
+	min-height: 540px;
+padding: 40px 60px 20px !important;
+}
+#our_main .main_right{
+	background: #EFEFEF;
+	min-height: 540px;
+padding: 40px 60px 20px !important;
+}
+#our_main .smail_title{
+	margin-bottom: 30px;
+text-align: left;
+color: #323232;
+letter-spacing: 1px;
+font-style: normal;
+line-height: 26px;
+font-size: 24px;
+position: relative;
+}
+.main_left .tit{
+	font-size: 16px;
+	font-weight:bold;
+}
+.main_left .left_list{
+	padding:20px 0px;
+
+}
+span.tit{
+	line-height: 40px;
+	display: block;
+}
+span.text{
+	line-height: 24px;
+	display: block;
+}
+.main_right .button{
+	background-color: #202020;
+color: #fff;
+margin-top: 10px;
+font-weight: 500;
+padding: 4px 20px;
+text-transform: uppercase;
+display: inline-block;
+position: relative;
+line-height: 34px;
+border: none;
+margin-top: 20px;
+}
+.main_right .button:hover{
+	background: #ebc3c5;
+}
+.main_right .need,.main_right .name,.main_right .tel{
+color: #323232;
+font-size: 14px;
+line-height: 24px;
+padding: 6px 10px;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #d1d1d1;
+border-radius: 0;
+box-shadow: none;
+box-sizing: border-box;
+outline: none;
+width: 100%;
+margin: 10px auto;
+}
+
